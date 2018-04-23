@@ -1,0 +1,22 @@
+{
+  "name": "templates_html_css",
+  "version": "1.0.0",
+  "description": "templates layout in html & css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjaroszewska/templates.git"
+  },
+  "author": "beata jaroszewska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjaroszewska/templates/issues"
+  },
+  "homepage": "https://github.com/bjaroszewska/templates#readme",
+  "dependencies": {
+    "stylus": "^0.54.5"
+  }
+}
