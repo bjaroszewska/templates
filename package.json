@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/bjaroszewska/templates#readme",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-stylus": "^2.7.0",
     "stylus": "^0.54.5"
   }
 }
