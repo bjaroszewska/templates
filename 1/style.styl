@@ -1,11 +1,17 @@
 $greyColor =#FAFAFA
+$darkGrey = #9C959A
 $blackColor = #000000
+$mainColor = #894534
 $transitionMedium = .3s
 $transitionLarge = .5s
+
+
 body
+  font-family: 'Raleway', sans-serif;
   background: $greyColor
   label:hover
     cursor: pointer
+  margin: 0px
   #burger
     opacity:0
   #burger + label
@@ -21,7 +27,7 @@ body
   	  height: 2px
   	  top: 50%
   	  display: block
-  	  background: $blackColor
+  	  background: $mainColor
   	  transition: $transitionLarge
     span:first-child
       top: 3px
@@ -66,6 +72,7 @@ body
           font-family: sans-serif
           display: block
           padding: 10px
+          color: $mainColor
    #burger:checked ~ nav
     height: 100vh
     transition-delay: 0s
@@ -73,3 +80,77 @@ body
       > li
         opacity: 1
         transition-delay: $transitionMedium 
+  .logo
+    z-index: 1000
+    position: fixed
+    font-family: 'Sacramento', cursive;
+    color: $mainColor
+    font-size: 10vh
+    margin-left: 5px
+  .main-image
+      background-image: url('./images/bakery.jpg')
+      height: 100vh
+      background-repeat: no-repeat
+      background-size: cover;
+  .paralaxa
+      background-image: url('./images/brot.jpg')
+      background-repeat: no-repeat
+      background-attachment: fixed;      background-size: cover;
+
+  .grid 
+       display: grid 
+       justify-content: center;
+       margin: 10vh
+       background-color: $greyColor
+       grid-template-columns: repeat(3, 1fr);
+       grid-gap: 2vh 5vh
+  .item
+          &-history
+                align-self: start
+                grid-column-start: 1
+                grid-column-end: 4          
+          &-recipe
+            justify-self: center
+          &-products
+               justify-self: end;
+          &-location
+            align-self: end;
+  .text-box 
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white
+    border-left: 3px solid $mainColor
+    font-size: 17px
+    color: $darkGrey
+  .title-box 
+    color: black
+   
+  .shape 
+      shape-outside: polygon(0 0, 0 200px, 300px 600px);
+      float: left;
+      width: 200px;
+      height: 200px;
+
+  .bread-icon 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  footer 
+    height: 100px
+    text-align: center
+    background-color: white
+    color:  $mainColor
+    font-family: 'Shadows Into Light Two', cursive
+    font-size: 17px
+    padding-top: 20px
+
+/** SMALL DEVICES **/
+@media only screen and (max-width : 768px) {
+ .grid  {
+        display: flex !important; 
+        flex-direction: column;
+    }
+        }
+
+
